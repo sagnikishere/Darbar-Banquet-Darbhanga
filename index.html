@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darbar Resort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#view">360 View</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Slideshow -->
+  <section id="home" class="hero">
+    <div class="slideshow">
+      <div class="slide" style="background-image:url('Screenshot 2025-09-24 001845.png');"></div>
+      <div class="slide" style="background-image:url('Screenshot 2025-09-24 001902.png');"></div>
+      <div class="slide" style="background-image:url('Screenshot 2025-09-24 001923.png');"></div>
+      <div class="slide" style="background-image:url('Screenshot 2025-09-24 001959.png');"></div>
+    </div>
+    <div class="hero-text">
+      <h1>Welcome to Darbar Banquet</h1>
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about fade-in">
+    <h2>Our Services</h2>
+    <div class="about-cards">
+      <div class="card">
+        <h3>Wedding</h3>
+        <p>Make your special day unforgettable with our grand wedding arrangements.</p>
+      </div>
+      <div class="card">
+        <h3>Office Party</h3>
+        <p>Host corporate events and office parties with luxury and elegance.</p>
+      </div>
+      <div class="card">
+        <h3>Pool</h3>
+        <p>Relax and refresh at our luxurious swimming pool with modern amenities.</p>
+      </div>
+      <div class="card">
+        <h3>Banquet Hall</h3>
+        <p>Spacious banquet halls perfect for conferences, parties, and events.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery fade-in">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="Screenshot 2025-09-24 001959.png" alt="Resort">
+      <img src="Screenshot 2025-09-24 002034.png" alt="Pool">
+      <img src="Screenshot 2025-09-24 002021.png" alt="Banquet Hall">
+      <img src="Screenshot 2025-09-24 001939.png" alt="Wedding">
+    </div>
+  </section>
+
+  <!-- 360 View Section -->
+  <section id="view" class="view fade-in">
+    <h2>360 View</h2>
+    <p>Explore our resort with an immersive 360° view experience.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" required>
+        <label>Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+      <div class="form-group">
+        <textarea required></textarea>
+        <label>Message</label>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=Darbhanga&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Darbar Resort. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      faders.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
