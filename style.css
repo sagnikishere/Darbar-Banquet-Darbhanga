@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+ 
 body {
   line-height: 1.6;
   color: #333;
@@ -239,3 +239,4 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
